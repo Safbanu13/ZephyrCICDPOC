@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = {"src/test/resources/AppFeatures"},
 		glue = {"stepdefinitions", "AppHooks"},
-		plugin = {"pretty"	}
+		plugin = {"pretty","json:target/JsonReports/report.json"	}
 )
 
 //"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","timeline:test-output-thread/"
