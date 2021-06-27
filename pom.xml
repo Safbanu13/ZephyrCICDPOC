@@ -122,11 +122,8 @@
 				<version>${maven.surefire.version}</version>
 				<configuration>
 					<includes>
-						<include>**/ParallelRun.java</include>
+						<exclude>**/*Runner.java</exclude>
 					</includes>
-					<parallel>methods</parallel>
-					<threadCount>4</threadCount>
-					<useUnlimitedThreads>false</useUnlimitedThreads>
 				</configuration>
 			</plugin>
 
