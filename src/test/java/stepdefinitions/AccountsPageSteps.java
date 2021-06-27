@@ -40,7 +40,7 @@ public class AccountsPageSteps {
 
 	}
 
-	@Then("user gets accounts section")
+	@Then("user gets Accounts section")
 	public void user_gets_accounts_section(DataTable sectionsTable) {
 		List<String> expaccountssectionlist=sectionsTable.asList();
 		System.out.println("Account Sections names are"+ expaccountssectionlist);

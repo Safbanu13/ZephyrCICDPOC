@@ -13,7 +13,7 @@ Then page title should be "My account - My Store"
 
 @accounts
 Scenario: Accounts section count
-Given user is on accounts page
+Given user is on Accounts page
 Then user gets Accounts section
 |ORDER HISTORY AND DETAILS|
 |MY CREDIT SLIPS|

@@ -1,0 +1,310 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10881344700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user has already logged in to application",
+            "match": {
+              "location": "stepdefinitions.AccountsPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "studentsafeena@gmail.com",
+                  "Test@123!"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-27T11:50:55.312Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3996700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getproperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 15971095100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Accounts page title",
+        "description": "",
+        "id": "account-page-feature;accounts-page-title",
+        "after": [
+          {
+            "result": {
+              "duration": 3014400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.Teardown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1683081700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitbrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 44004400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user is on Accounts page",
+            "match": {
+              "location": "stepdefinitions.AccountsPageSteps.user_is_on_accounts_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16999000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user gets the title of the page",
+            "match": {
+              "location": "stepdefinitions.LoginSteps.user_gets_the_title_of_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21990000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "page title should be \"My account - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My account - My Store\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinitions.LoginSteps.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@accounts"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9589698800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user has already logged in to application",
+            "match": {
+              "location": "stepdefinitions.AccountsPageSteps.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "studentsafeena@gmail.com",
+                  "Test@123!"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-27T11:51:24.165Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3995600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.getproperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3943058900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Accounts section count",
+        "description": "",
+        "id": "account-page-feature;accounts-section-count",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.Teardown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 923126800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AppHooks.ApplicationHooks.quitbrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26997800,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user is on Accounts page",
+            "match": {
+              "location": "stepdefinitions.AccountsPageSteps.user_is_on_accounts_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 395999000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user gets Accounts section",
+            "match": {
+              "location": "stepdefinitions.AccountsPageSteps.user_gets_accounts_section(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ORDER HISTORY AND DETAILS"
+                ]
+              },
+              {
+                "cells": [
+                  "MY CREDIT SLIPS"
+                ]
+              },
+              {
+                "cells": [
+                  "MY ADDRESSES"
+                ]
+              },
+              {
+                "cells": [
+                  "MY PERSONAL INFORMATION"
+                ]
+              },
+              {
+                "cells": [
+                  "MY WISHLISTS"
+                ]
+              },
+              {
+                "cells": [
+                  "Home"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 24001900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "accounts section count should be 6",
+            "match": {
+              "arguments": [
+                {
+                  "val": "6",
+                  "offset": 33
+                }
+              ],
+              "location": "stepdefinitions.AccountsPageSteps.accounts_section_count_should_be(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@accounts"
+          }
+        ]
+      }
+    ],
+    "name": "Account Page Feature",
+    "description": "",
+    "id": "account-page-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/AppFeatures/AccountsPage.feature",
+    "tags": []
+  }
+]
