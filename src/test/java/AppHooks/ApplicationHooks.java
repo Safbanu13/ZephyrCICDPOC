@@ -1,6 +1,7 @@
 package AppHooks;
 
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -32,7 +33,8 @@ public class ApplicationHooks {
 			public void launchBrowser() {
 			String browsername=prop.getProperty("browser");
 			driverfactory=new DriverFactory();
-			driver=driverfactory.init_driver(browsername);}
+			driver=driverfactory.init_driver(browsername);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);}
 			
 			@After(order=0)
 			public void quitbrowser() {
