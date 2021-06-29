@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="77.956">
-    <testcase classname="Account Page Feature" name="Accounts page title" time="27.489">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="113.614">
+    <testcase classname="Account Page Feature" name="Accounts page title" time="35.546">
         <system-out>
             <![CDATA[Given user has already logged in to application.............................passed
 Given user is on Accounts page..............................................passed
@@ -9,7 +9,7 @@ Then page title should be "My account - My Store"...........................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Account Page Feature" name="Accounts section count" time="15.486">
+    <testcase classname="Account Page Feature" name="Accounts section count" time="26.99">
         <system-out>
             <![CDATA[Given user has already logged in to application.............................passed
 Given user is on Accounts page..............................................passed
@@ -18,7 +18,7 @@ And accounts section count should be 6......................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login page feature" name="Login page title" time="8.965">
+    <testcase classname="Login page feature" name="Login page title" time="17.169">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When user gets the title of the page........................................passed
@@ -26,8 +26,8 @@ Then page title should be "Login - My Store"................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Login page feature" name="Forgot Password link" time="10.538">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Forgot your password?1&quot;}&#10;  (Session info: chrome=91.0.4472.124)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'INBLR-MVM-1385', ip: '10.221.105.130', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BanuSafe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61060}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 64a7e47905fa0d04fa3e09bd3cf5b45c&#10;*** Element info: {Using=link text, value=Forgot your password?1}" type="org.openqa.selenium.NoSuchElementException">
+    <testcase classname="Login page feature" name="Forgot Password link" time="5.164">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Forgot your password?1&quot;}&#10;  (Session info: chrome=91.0.4472.124)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'INBLR-MVM-1385', ip: '10.221.105.130', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BanuSafe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5264144df510d7e28581a76b2ecaba47&#10;*** Element info: {Using=link text, value=Forgot your password?1}" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given user is on login page.................................................passed
 Then forgot your password link should be displayed..........................failed
 
@@ -38,8 +38,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'INBLR-MVM-1385', ip: '10.221.105.130', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BanuSafe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61060}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 64a7e47905fa0d04fa3e09bd3cf5b45c
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BanuSafe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5264144df510d7e28581a76b2ecaba47
 *** Element info: {Using=link text, value=Forgot your password?1}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -61,7 +61,7 @@ Session ID: 64a7e47905fa0d04fa3e09bd3cf5b45c
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Login page feature" name="Login with correct credentials" time="13.737">
+    <testcase classname="Login page feature" name="Login with correct credentials" time="28.278">
         <system-out>
             <![CDATA[Given user is on login page.................................................passed
 When user enters username "studentsafeena@gmail.com"........................passed

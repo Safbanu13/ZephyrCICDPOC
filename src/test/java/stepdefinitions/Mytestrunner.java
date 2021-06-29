@@ -1,4 +1,5 @@
-package testrunners;
+package stepdefinitions;
+
 
 import org.junit.runner.RunWith;
 
