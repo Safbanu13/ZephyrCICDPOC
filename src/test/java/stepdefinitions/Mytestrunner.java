@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src/test/resources/AppFeatures/LoginSteps.java"},
+		features = {"src/test/resources/AppFeatures"},
 		glue = {"stepdefinitions", "AppHooks"},
 		plugin = {"pretty","json:target/Reports/report.json","junit:target/Reports/cucumber.xml"},
 				monochrome = true

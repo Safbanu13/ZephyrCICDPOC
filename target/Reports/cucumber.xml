@@ -1,33 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="113.614">
-    <testcase classname="Account Page Feature" name="Accounts page title" time="35.546">
-        <system-out>
+<testsuite errors="0" failures="5" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="66.514">
+    <testcase classname="Account Page Feature" name="Accounts page title" time="34.64">
+        <failure message="expected [true] but found [false]" type="java.lang.AssertionError">
             <![CDATA[Given user has already logged in to application.............................passed
 Given user is on Accounts page..............................................passed
 When user gets the title of the page........................................passed
-Then page title should be "My account - My Store"...........................passed
+Then page title should be "My account - My Store"...........................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepdefinitions.LoginSteps.page_title_should_be(LoginSteps.java:38)
+	at ✽.page title should be "My account - My Store"(file:///C:/Users/BanuSafe/eclipse-workspace/CICD/src/test/resources/AppFeatures/AccountsPage.feature:12)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="Account Page Feature" name="Accounts section count" time="26.99">
-        <system-out>
-            <![CDATA[Given user has already logged in to application.............................passed
-Given user is on Accounts page..............................................passed
-Then user gets Accounts section.............................................passed
-And accounts section count should be 6......................................passed
+    <testcase classname="Account Page Feature" name="Accounts section count" time="5.454">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#email&quot;}&#10;  (Session info: chrome=91.0.4472.124)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'INBLR-MVM-1385', ip: '10.221.105.130', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BanuSafe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51124}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 831c9b34038181ed0d59fe9117e1b00e&#10;*** Element info: {Using=id, value=email}" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given user has already logged in to application.............................failed
+Given user is on Accounts page..............................................skipped
+Then user gets Accounts section.............................................skipped
+And accounts section count should be 6......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'INBLR-MVM-1385', ip: '10.221.105.130', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BanuSafe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51124}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 831c9b34038181ed0d59fe9117e1b00e
+*** Element info: {Using=id, value=email}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.pages.Loginpage.doLogin(Loginpage.java:50)
+	at stepdefinitions.AccountsPageSteps.user_has_already_logged_in_to_application(AccountsPageSteps.java:32)
+	at ✽.user has already logged in to application(file:///C:/Users/BanuSafe/eclipse-workspace/CICD/src/test/resources/AppFeatures/AccountsPage.feature:4)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="Login page feature" name="Login page title" time="17.169">
-        <system-out>
+    <testcase classname="Login page feature" name="Login page title" time="4.399">
+        <failure message="expected [true] but found [false]" type="java.lang.AssertionError">
             <![CDATA[Given user is on login page.................................................passed
 When user gets the title of the page........................................passed
-Then page title should be "Login - My Store"................................passed
+Then page title should be "Login - My Store"................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepdefinitions.LoginSteps.page_title_should_be(LoginSteps.java:38)
+	at ✽.page title should be "Login - My Store"(file:///C:/Users/BanuSafe/eclipse-workspace/CICD/src/test/resources/AppFeatures/Loginpage.feature:7)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="Login page feature" name="Forgot Password link" time="5.164">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Forgot your password?1&quot;}&#10;  (Session info: chrome=91.0.4472.124)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'INBLR-MVM-1385', ip: '10.221.105.130', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BanuSafe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5264144df510d7e28581a76b2ecaba47&#10;*** Element info: {Using=link text, value=Forgot your password?1}" type="org.openqa.selenium.NoSuchElementException">
+    <testcase classname="Login page feature" name="Forgot Password link" time="3.703">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Forgot your password?1&quot;}&#10;  (Session info: chrome=91.0.4472.124)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'INBLR-MVM-1385', ip: '10.221.105.130', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BanuSafe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 986befbca21112c220f2080eca5038e4&#10;*** Element info: {Using=link text, value=Forgot your password?1}" type="org.openqa.selenium.NoSuchElementException">
             <![CDATA[Given user is on login page.................................................passed
 Then forgot your password link should be displayed..........................failed
 
@@ -38,8 +84,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'INBLR-MVM-1385', ip: '10.221.105.130', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BanuSafe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50565}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5264144df510d7e28581a76b2ecaba47
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\BanuSafe\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57683}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 986befbca21112c220f2080eca5038e4
 *** Element info: {Using=link text, value=Forgot your password?1}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -61,15 +107,24 @@ Session ID: 5264144df510d7e28581a76b2ecaba47
 ]]>
         </failure>
     </testcase>
-    <testcase classname="Login page feature" name="Login with correct credentials" time="28.278">
-        <system-out>
+    <testcase classname="Login page feature" name="Login with correct credentials" time="17.429">
+        <failure message="expected [true] but found [false]" type="java.lang.AssertionError">
             <![CDATA[Given user is on login page.................................................passed
 When user enters username "studentsafeena@gmail.com"........................passed
 And user enters password "Test@123!"........................................passed
 And user clicks on Login button.............................................passed
 Then user gets the title of the page........................................passed
-And page title should be "My account - My Store"............................passed
+And page title should be "My account - My Store"............................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepdefinitions.LoginSteps.page_title_should_be(LoginSteps.java:38)
+	at ✽.page title should be "My account - My Store"(file:///C:/Users/BanuSafe/eclipse-workspace/CICD/src/test/resources/AppFeatures/Loginpage.feature:19)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: stepdefinitions.Mytestrunner
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 118.785 s - in stepdefinitions.Mytestrunner
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 72.338 s - in stepdefinitions.Mytestrunner
