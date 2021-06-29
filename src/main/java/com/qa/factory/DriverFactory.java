@@ -14,7 +14,7 @@ public class DriverFactory {
 	public static ThreadLocal<WebDriver> tlDriver=new ThreadLocal<>();
 	
 	/**
-	 * This method returns the local driver threadfor the given browser value
+	 * This method returns the local driver thread for the given browser value
 	 * @param browser
 	 * @return
 	 */
