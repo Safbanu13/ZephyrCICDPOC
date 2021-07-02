@@ -131,9 +131,9 @@
 							<includes>
 								<include>**/Mytestrunner.java</include>
 							</includes>
-							<parallel>methods</parallel>
-							<threadcount>4</threadcount>
-							<percorethreadcount>true</percorethreadcount>
+							<!--<parallel>methods</parallel>  -->
+							<!-- <threadcount>4</threadcount> -->
+							<!-- <percorethreadcount>true</percorethreadcount> -->
 						</configuration>
 
 					</execution>

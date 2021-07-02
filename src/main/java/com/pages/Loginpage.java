@@ -1,5 +1,7 @@
 package com.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -47,6 +49,7 @@ public class Loginpage {
 	
 	public AccountsPage doLogin(String un, String pwd) {
 		System.out.println("login with: " + un + " and " + pwd);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(emailid).sendKeys(un);
 		driver.findElement(password).sendKeys(pwd);
 		driver.findElement(signInButton).click();
