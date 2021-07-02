@@ -31,12 +31,12 @@ public class DriverFactory {
 			WebDriverManager.firefoxdriver().setup();
 			tlDriver.set(new FirefoxDriver());}
 			
-			else if (browser.equals("internet explorere")) {
+			else if (browser.equals("internet explorer")) {
 				WebDriverManager.iedriver().setup();
 				tlDriver.set(new InternetExplorerDriver());}
 				
 				else {
-					System.out.println("Please pass the correct browseer value");
+					System.out.println("Please pass the correct browser value");
 				}
 			getDriver().manage().deleteAllCookies();
 			getDriver().manage().window().maximize();

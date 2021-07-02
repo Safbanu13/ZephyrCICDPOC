@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Assert;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pages.AccountsPage;
 import com.pages.Loginpage;
@@ -21,14 +23,16 @@ public class AccountsPageSteps {
 	private AccountsPage accountpage;
 
 
+
 	@Given("user has already logged in to application")
-	public void user_has_already_logged_in_to_application(DataTable credentialtable) {
+	public void user_has_already_logged_in_to_application(DataTable credentialtable) throws InterruptedException {
 
 		List<Map<String,String>> credlist= credentialtable.asMaps();
 		String Username=credlist.get(0).get("username");
 		String password= credlist.get(0).get("password");
 		DriverFactory.getDriver()
 		.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+		Thread.sleep(30);
 		accountpage = loginpage.doLogin(Username, password);
 		
 	}
@@ -44,7 +48,7 @@ public class AccountsPageSteps {
 	public void user_gets_accounts_section(DataTable sectionsTable) {
 		List<String> expaccountssectionlist=sectionsTable.asList();
 		System.out.println("Account Sections names are"+ expaccountssectionlist);
-
+		
 		List <String>actaccountsectionlist = accountpage.getAccSectionList();
 		Assert.assertTrue(actaccountsectionlist.containsAll(expaccountssectionlist));
 
