@@ -32,7 +32,7 @@ public class AccountsPageSteps {
 		String password= credlist.get(0).get("password");
 		DriverFactory.getDriver()
 		.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
-		Thread.sleep(30);
+		Thread.sleep(5);
 		accountpage = loginpage.doLogin(Username, password);
 		
 	}
